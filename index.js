@@ -1,6 +1,6 @@
 var cheerio = require('cheerio');
 
-module.exports = function(html, opts, plugins){
+module.exports = function(html, plugins, opts){
    var options = {};
    options.normalizeWhitespace = opts.normalizeWhitespace || true;
    options.xmlMode = opts.xmlMode || true;
