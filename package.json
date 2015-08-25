@@ -1,0 +1,33 @@
+{
+  "name": "postxml",
+  "version": "0.0.1",
+  "description": "Xml transformations",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "jshint . && jscs ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postxml/postxml.git"
+  },
+  "keywords": [
+    "html",
+    "transform"
+  ],
+  "author": "alanev <e@alanev.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.19.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-mocha": "^2.1.3"
+  },
+  "bugs": {
+    "url": "https://github.com/postxml/postxml/issues"
+  },
+  "homepage": "https://github.com/postxml/postxml"
+}
