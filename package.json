@@ -1,6 +1,6 @@
 {
   "name": "postxml",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Xml transformations",
   "main": "index.js",
   "scripts": {
