@@ -10,11 +10,11 @@ var test = function (input, output, opts) {
    //  plugin(opts)($);
    var processed = postxml(
       '<block class="b-block"><element class="b-block__element">Текст</element></block>',
-      {},
       [
          plugin1(['element']),
          plugin2(['div'])
-      ]
+      ],
+      opts
    );
 
    expect(output).to.eql(processed);
