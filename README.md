@@ -44,3 +44,6 @@ gulp.task('html', function () {
 * [Plugin Boilerplate](https://github.com/postxml/postxml-plugin-boilerplate)
 * [postxml-imgalt](https://github.com/postxml/postxml-imgalt)
 * [poxtxml-custom-tags](https://github.com/postxml/poxtxml-custom-tags)
+* [poxtxml-import](https://github.com/postxml/poxtxml-import)
+* [poxtxml-placeholder](https://github.com/postxml/poxtxml-placeholder)
+* [poxtxml-beml](https://github.com/postxml/poxtxml-beml)
