@@ -2,11 +2,11 @@
 
 It is a tool for transformating xml and html with JS plugins using [cheerio API](http://cheeriojs.github.io/cheerio/).
 
-## Usage
-
-### Instalation
+## Instalation
 
 `npm i postxml --save-dev`
+
+## Usage
 
 ### Nodejs
 ```js
@@ -14,12 +14,10 @@ var postxml = require('postxml');
 var postxml-plugin = require('postxml-plugin');
 var cheerioOptions = {};
 
-var output = postxml(
-   '<div class="b-block"></div>',
-   [
+var output = postxml([
       postxml-plugin(opts)
-   ],
-   cheerioOptions
+   ])
+   .process('<div class="b-block"></div>', cheerioOptions);
 );
 ```
 
@@ -40,10 +38,30 @@ gulp.task('html', function () {
 })
 ```
 
+## API
+
+### Procces(html, cheerioOptions)
+Transform html with plugins
+
+### Use(plugin)
+Add plugin
+
+### Load(html, cheerioOptions)
+Transform html into cheerio object
+
 ## Plugins
 * [Plugin Boilerplate](https://github.com/postxml/postxml-plugin-boilerplate)
 * [postxml-imgalt](https://github.com/postxml/postxml-imgalt)
-* [poxtxml-custom-tags](https://github.com/postxml/poxtxml-custom-tags)
-* [poxtxml-import](https://github.com/postxml/poxtxml-import)
-* [poxtxml-placeholder](https://github.com/postxml/poxtxml-placeholder)
-* [poxtxml-beml](https://github.com/postxml/poxtxml-beml)
+* [postxml-custom-tags](https://github.com/postxml/postxml-custom-tags)
+* [postxml-import](https://github.com/postxml/postxml-import)
+* [postxml-placeholder](https://github.com/postxml/postxml-placeholder)
+* [postxml-beml](https://github.com/postxml/postxml-beml)
+* [postxml-ng-valid](https://github.com/postxml/postxml-ng-valid) - replace `ng-` with `data-ng`
+* [postxml-markdown](https://github.com/postxml/postxml-markdown) - add classes (bem) to `markdown` html tags
+* [postxml-wrap](https://github.com/postxml/postxml-wrap) - wrap with emmet abbreviation
+
+
+## Ideas for plugins
+* **postxml-import-styles** - replace `<link>` with `<style>` and import css-code
+* **postxml-inline-data** - replace images and files with data uri
+* **postxml-image-size** - add sizes to images
