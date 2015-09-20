@@ -4,19 +4,38 @@ var set = function (variable, alt) {
     return (variable != undefined) ? variable : alt;
 };
 
-module.exports = function(html, plugins, opts){
-    var options = {};
+var POSTXML = function () {
+    
+    var postxml = this;
+    
+    return function (plugins) {
+        postxml.plugins = plugins || [];
+        return postxml;
+    };
+};
+
+POSTXML.prototype.process = function (html) {
+    var options = {}, $;
     options.normalizeWhitespace = set(options.normalizeWhitespace, true);
     options.xmlMode = set(options.xmlMode, false);
     options.decodeEntities = set(options.decodeEntities, false);
 
-    // load
-    var $ = cheerio.load(html, options);
-
     // transform with plugins
-    for(var i = 0, len = plugins.length; i < len; i++){
-        plugins[i]($);
-    }
+    this.plugins.forEach(function (plugin) {
+        $ = cheerio.load(html, options);
+        plugin($);
+        html = $.html()
+    });
 
     return $.html();
-};
+}
+
+POSTXML.prototype.load = cheerio.load;
+
+POSTXML.prototype.use = function (plugin) {
+    this.plugins.push(plugin);
+    
+    return this;
+}
+
+module.exports = new POSTXML;
