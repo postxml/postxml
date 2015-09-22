@@ -30,8 +30,6 @@ POSTXML.prototype.process = function (html) {
     return $.html();
 }
 
-POSTXML.prototype.load = cheerio.load;
-
 POSTXML.prototype.use = function (plugin) {
     this.plugins.push(plugin);
     
