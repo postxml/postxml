@@ -59,9 +59,9 @@ Transform html into cheerio object
 * [postxml-ng-valid](https://github.com/postxml/postxml-ng-valid) - replace `ng-` with `data-ng`
 * [postxml-markdown](https://github.com/postxml/postxml-markdown) - add classes (bem) to `markdown` html tags
 * [postxml-wrap](https://github.com/postxml/postxml-wrap) - wrap with emmet abbreviation
+* [postxml-import-styles](https://github.com/postxml/postxml-import-styles) - replace `<link>` with `<style>` and import css-code
 
 
 ## Ideas for plugins
-* **postxml-import-styles** - replace `<link>` with `<style>` and import css-code
 * **postxml-inline-data** - replace images and files with data uri
 * **postxml-image-size** - add sizes to images
