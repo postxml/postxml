@@ -1,5 +1,7 @@
 var postxml = require('../');
 var expect = require('chai').expect;
+var plugin1 = require('./plugin1.js');
+var plugin2 = require('./plugin2.js');
 
 var process = function (input, output, opts, plugins) {
     var processed = postxml(plugins)
@@ -28,8 +30,8 @@ describe('postxml', function () {
             '<block class="b-block"><div class="b-block__element" mod="mod">Текст</div></block>',
             {},
             [
-               require('./plugin1.js')(['element']),
-               require('./plugin2.js')(['div'])
+               plugin1(['element']),
+               plugin2(['div'])
             ]
         );
     });
@@ -39,8 +41,8 @@ describe('postxml', function () {
             '<block class="b-block"><div class="b-block__element" mod="mod">Текст</div></block>',
             {},
             [
-               require('./plugin1.js')(['element']),
-               require('./plugin2.js')(['div'])
+               plugin1(['element']),
+               plugin2(['div'])
             ]
         );
     });
@@ -49,7 +51,7 @@ describe('postxml', function () {
             '<block class="b-block"><element class="b-block__element">Текст</element></block>',
             '<block class="b-block"><div class="b-block__element">Текст</div></block>',
             {},
-            require('./plugin1.js')(['element'])
+            plugin1(['element'])
         );
     });
 });
