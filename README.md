@@ -27,7 +27,7 @@ var output = postxml([
 ```js
 var postxml = require('gulp-postxml');
 var postxmlPlugins = [
-      require('postxml-plugin')
+      require('postxml-plugin')(options)
    ];
 var cheerioOptions = {};
 
