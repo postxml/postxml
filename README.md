@@ -71,3 +71,7 @@ Transform html into cheerio object
 * **postxml-lodash-template** - anable lodash templates
 * **postxml-prefix** - add prefix to all classes
 * **postxml-size** - shortcut width & height 
+
+## Examples of usage postxml in real projects
+* http://projects.alanev.ru/apc/apc.dev.zip
+* http://projects.alanev.ru/nanopol/nanopol.dev.zip
