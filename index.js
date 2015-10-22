@@ -1,9 +1,5 @@
 var cheerio = require('cheerio');
 
-var set = function (variable, alt) {
-    return (variable != undefined) ? variable : alt;
-};
-
 var POSTXML = function () {
     
     var postxml = this;
@@ -16,9 +12,9 @@ var POSTXML = function () {
 
 POSTXML.prototype.process = function (html) {
     var options = {}, $;
-    options.normalizeWhitespace = set(options.normalizeWhitespace, true);
-    options.xmlMode = set(options.xmlMode, false);
-    options.decodeEntities = set(options.decodeEntities, false);
+    options.normalizeWhitespace = options.normalizeWhitespace || true;
+    options.xmlMode = options.xmlMode || false;
+    options.decodeEntities = options.decodeEntities || false;
 
     // transform with plugins
     this.plugins.forEach(function (plugin) {
