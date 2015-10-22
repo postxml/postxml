@@ -60,8 +60,13 @@ Transform html into cheerio object
 * [postxml-markdown](https://github.com/postxml/postxml-markdown) - add classes (bem) to `markdown` html tags
 * [postxml-wrap](https://github.com/postxml/postxml-wrap) - wrap with emmet abbreviation
 * [postxml-import-styles](https://github.com/postxml/postxml-import-styles) - replace `<link>` with `<style>` and import css-code
+* [postxml-import-styles](https://github.com/postxml/postxml-image-size) - adds sizes to images
+* [postxml-import-styles](https://github.com/postxml/postxml-remove) - removes elements by query selectors
 
 
 ## Ideas for plugins
 * **postxml-inline-data** - replace images and files with data uri
-* **postxml-image-size** - add sizes to images
+* **postxml-template** - added template for postxml-repeat
+* **postxml-lazyload** - syntax for lazyload
+* **postxml-lodash-template** - anable lodash templates
+* **postxml-prefix** - add prefix to all classes
