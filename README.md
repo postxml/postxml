@@ -27,7 +27,7 @@ var output = postxml([
 ```js
 var postxml = require('gulp-postxml');
 var postxmlPlugins = [
-      require('postxml-plugin')
+      require('postxml-plugin')(options)
    ];
 var cheerioOptions = {};
 
@@ -40,7 +40,7 @@ gulp.task('html', function () {
 
 ## API
 
-### Procces(html, cheerioOptions)
+### Process(html, cheerioOptions)
 Transform html with plugins
 
 ### Use(plugin)
@@ -70,3 +70,4 @@ Transform html into cheerio object
 * **postxml-lazyload** - syntax for lazyload
 * **postxml-lodash-template** - anable lodash templates
 * **postxml-prefix** - add prefix to all classes
+* **postxml-size** - shortcut width & height 
