@@ -12,7 +12,7 @@ var POSTXML = function () {
 
 POSTXML.prototype.process = function (html) {
     var options = {}, $;
-    options.normalizeWhitespace = options.normalizeWhitespace || true;
+    options.normalizeWhitespace = options.normalizeWhitespace || false;
     options.xmlMode = options.xmlMode || false;
     options.decodeEntities = options.decodeEntities || false;
 
