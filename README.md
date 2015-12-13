@@ -1,6 +1,6 @@
 # Postxml
 
-It is a tool for transformating xml and html with JS plugins using [cheerio API](http://cheeriojs.github.io/cheerio/).
+It is a tool for transforming html/xml with JS plugins based on [cheerio](http://cheeriojs.github.io/cheerio/).
 
 ## Instalation
 
@@ -11,23 +11,21 @@ It is a tool for transformating xml and html with JS plugins using [cheerio API]
 ### Nodejs
 ```js
 var postxml = require('postxml');
-var postxml-plugin = require('postxml-plugin');
 var cheerioOptions = {};
 
 var output = postxml([
-      postxml-plugin(opts)
+      require('postxml-plugin')(pluginOptions)
    ])
    .process('<div class="b-block"></div>', cheerioOptions);
 );
 ```
 
 ### Gulp
-
-`npm i gulp-postxml --save-dev`
+Use [`gulp-postxml`](https://github.com/postxml/gulp-postxml)
 ```js
 var postxml = require('gulp-postxml');
 var postxmlPlugins = [
-      require('postxml-plugin')(options)
+      require('postxml-plugin')(pluginOptions)
    ];
 var cheerioOptions = {};
 
@@ -46,14 +44,11 @@ Transform html with plugins
 ### Use(plugin)
 Add plugin
 
-### Load(html, cheerioOptions)
-Transform html into cheerio object
-
 ## Boilerplate for new plugins
 * [Plugin Boilerplate](https://github.com/postxml/postxml-plugin-boilerplate)
 
 ## Plugins
-* [postxml-beml](https://github.com/postxml/postxml-beml)
+* [postxml-beml](https://github.com/postxml/postxml-beml) - [BEML](https://github.com/zenwalker/node-beml) plugin
 * [postxml-custom-tags](https://github.com/postxml/postxml-custom-tags)
 * [postxml-image-size](https://github.com/postxml/postxml-image-size) - adds sizes to images
 * [postxml-imgalt](https://github.com/postxml/postxml-imgalt)
@@ -70,11 +65,11 @@ Transform html into cheerio object
 ## Ideas for plugins
 * **postxml-inline-data** - replace images and files with data uri
 * **postxml-template** - added template for postxml-repeat
-* **postxml-lazyload** - syntax for lazyload
-* **postxml-lodash-template** - anable lodash templates
+* **postxml-lazyload** - shortcut syntax for lazyload
 * **postxml-prefix** - add prefix to all classes
-* **postxml-size** - shortcut width & height 
+* **postxml-size** - shortcut width & height
+* **postxml-variables** - html variables
 
 ## Examples of usage postxml in real projects
+* http://projects.alanev.ru/wizard/wizard.dev.zip
 * http://projects.alanev.ru/apc/apc.dev.zip
-* http://projects.alanev.ru/nanopol/nanopol.dev.zip
