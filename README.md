@@ -49,19 +49,22 @@ Add plugin
 ### Load(html, cheerioOptions)
 Transform html into cheerio object
 
-## Plugins
+## Boilerplate for new plugins
 * [Plugin Boilerplate](https://github.com/postxml/postxml-plugin-boilerplate)
-* [postxml-imgalt](https://github.com/postxml/postxml-imgalt)
-* [postxml-custom-tags](https://github.com/postxml/postxml-custom-tags)
-* [postxml-import](https://github.com/postxml/postxml-import)
-* [postxml-placeholder](https://github.com/postxml/postxml-placeholder)
+
+## Plugins
 * [postxml-beml](https://github.com/postxml/postxml-beml)
-* [postxml-ng-valid](https://github.com/postxml/postxml-ng-valid) - replace `ng-` with `data-ng`
-* [postxml-markdown](https://github.com/postxml/postxml-markdown) - add classes (bem) to `markdown` html tags
-* [postxml-wrap](https://github.com/postxml/postxml-wrap) - wrap with emmet abbreviation
-* [postxml-import-styles](https://github.com/postxml/postxml-import-styles) - replace `<link>` with `<style>` and import css-code
+* [postxml-custom-tags](https://github.com/postxml/postxml-custom-tags)
 * [postxml-image-size](https://github.com/postxml/postxml-image-size) - adds sizes to images
+* [postxml-imgalt](https://github.com/postxml/postxml-imgalt)
+* [postxml-import](https://github.com/postxml/postxml-import)
+* [postxml-import-styles](https://github.com/postxml/postxml-import-styles) - replace `<link>` with `<style>` and import css-code
+* [postxml-markdown](https://github.com/postxml/postxml-markdown) - add classes (bem) to `markdown` html tags
+* [postxml-ng-valid](https://github.com/postxml/postxml-ng-valid) - replace `ng-` with `data-ng`
+* [postxml-placeholder](https://github.com/postxml/postxml-placeholder)
 * [postxml-remove](https://github.com/postxml/postxml-remove) - removes elements by query selectors
+* [postxml-repeat](https://github.com/postxml/postxml-remove) - repeat elements
+* [postxml-wrap](https://github.com/postxml/postxml-wrap) - wrap with emmet abbreviation
 
 
 ## Ideas for plugins
