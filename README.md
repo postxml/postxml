@@ -60,7 +60,7 @@ Add plugin
 * [postxml-remove](https://github.com/postxml/postxml-remove) - removes elements by query selectors
 * [postxml-repeat](https://github.com/postxml/postxml-remove) - repeat elements
 * [postxml-wrap](https://github.com/postxml/postxml-wrap) - wrap with emmet abbreviation
-
+* [postxml-amp](https://github.com/rkazakov/postxml-amp) - converts plain HTML to Google Accelerated Mobile Pages (AMP)
 
 ## Ideas for plugins
 * **postxml-inline-data** - replace images and files with data uri
