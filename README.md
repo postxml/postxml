@@ -48,6 +48,7 @@ Add plugin
 * [Plugin Boilerplate](https://github.com/postxml/postxml-plugin-boilerplate)
 
 ## Plugins
+* [postxml-amp](https://github.com/rkazakov/postxml-amp) - converts plain HTML to Google Accelerated Mobile Pages (AMP)
 * [postxml-beml](https://github.com/postxml/postxml-beml) - [BEML](https://github.com/zenwalker/node-beml) plugin
 * [postxml-custom-tags](https://github.com/postxml/postxml-custom-tags)
 * [postxml-image-size](https://github.com/postxml/postxml-image-size) - adds sizes to images
@@ -60,7 +61,6 @@ Add plugin
 * [postxml-remove](https://github.com/postxml/postxml-remove) - removes elements by query selectors
 * [postxml-repeat](https://github.com/postxml/postxml-remove) - repeat elements
 * [postxml-wrap](https://github.com/postxml/postxml-wrap) - wrap with emmet abbreviation
-
 
 ## Ideas for plugins
 * **postxml-inline-data** - replace images and files with data uri
