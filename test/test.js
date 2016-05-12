@@ -5,13 +5,13 @@ var plugin2 = require('./plugin2.js');
 
 var process = function (input, output, opts, plugins) {
     var processed = postxml(plugins)
-                        .process(input);
+                        .process(input).html;
 
     expect(output).to.eql(processed);
 };
 
 var use = function (input, output, opts, plugin) {
-    var processed = postxml().use(plugin).process(input);
+    var processed = postxml().use(plugin).process(input).html;
 
     expect(output).to.eql(processed);
 }
