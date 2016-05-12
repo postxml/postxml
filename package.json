@@ -18,6 +18,8 @@
   "author": "alanev <e@alanev.ru>",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-register": "^6.8.0",
     "cheerio": "^0.19.0"
   },
   "devDependencies": {
@@ -29,5 +31,10 @@
   "bugs": {
     "url": "https://github.com/postxml/postxml/issues"
   },
-  "homepage": "https://github.com/postxml/postxml"
+  "homepage": "https://github.com/postxml/postxml",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
 }
