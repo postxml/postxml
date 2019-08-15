@@ -71,5 +71,4 @@ Add plugin
 * **postxml-variables** - html variables
 
 ## Examples of usage postxml in real projects
-* http://projects.alanev.ru/wizard/wizard.dev.zip
-* http://projects.alanev.ru/apc/apc.dev.zip
+* https://github.com/gezatone/gezatone-ui/blob/master/utils/postxml-config.js
